@@ -27,6 +27,13 @@ function checkWin(){
   else if (spaces[0].symbol==="O"&&spaces[1].symbol==="O"&&spaces[2].symbol==="O"){
     $("#winHeader").append("Player 2 wins");
   }
+  else if (spaces[3].symbol==="X"&&spaces[4].symbol==="X"&&spaces[5].symbol==="X"){
+    $("#winHeader").append("Player 1 wins");
+  }
+  else if (spaces[3].symbol==="O"&&spaces[4].symbol==="O"&&spaces[5].symbol==="O"){
+    $("#winHeader").append("Player 2 wins");
+  }
+
 
 
 }
