@@ -21,6 +21,16 @@ function Space (marked, symbol){
 }
 
 function checkWin(){
+
+  //tie game checker
+  var markedSpaces=0;
+  spaces.forEach(function(space){
+    if (space.marked==="Yes"){
+      markedSpaces++;
+    } else{}
+  });
+
+  console.log(markedSpaces);
   if (spaces[0].symbol==="X"&&spaces[1].symbol==="X"&&spaces[2].symbol==="X"){
     $("#winHeader").append("Player 1 wins");
   }
@@ -68,7 +78,9 @@ function checkWin(){
   }
   else if (spaces[6].symbol==="O"&&spaces[4].symbol==="O"&&spaces[2].symbol==="O"){
     $("#winHeader").append("Player 2 wins");
-  }
+  } else if (markedSpaces===9){
+    $("#winHeader").append("Tie Game!");
+  } else{}
 }
 
 $(document).ready(function() {
@@ -84,7 +96,7 @@ $(document).ready(function() {
         spaces[cellId].symbol=player2.symbol;
         turnKeeper++;
         checkWin();
-        console.log(spaces[0].symbol);
+        //console.log(spaces[0].symbol);
       } else {
         $(this).append(player1.symbol);
         turnKeeper++;
