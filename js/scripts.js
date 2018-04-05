@@ -33,11 +33,43 @@ function checkWin(){
   else if (spaces[3].symbol==="O"&&spaces[4].symbol==="O"&&spaces[5].symbol==="O"){
     $("#winHeader").append("Player 2 wins");
   }
-
-
-
+  else if (spaces[6].symbol==="X"&&spaces[7].symbol==="X"&&spaces[8].symbol==="X"){
+    $("#winHeader").append("Player 1 wins");
+  }
+  else if (spaces[6].symbol==="O"&&spaces[7].symbol==="O"&&spaces[8].symbol==="O"){
+    $("#winHeader").append("Player 2 wins");
+  }
+  else if (spaces[0].symbol==="X"&&spaces[3].symbol==="X"&&spaces[6].symbol==="X"){
+    $("#winHeader").append("Player 1 wins");
+  }
+  else if (spaces[0].symbol==="O"&&spaces[3].symbol==="O"&&spaces[6].symbol==="O"){
+    $("#winHeader").append("Player 2 wins");
+  }
+  else if (spaces[1].symbol==="X"&&spaces[4].symbol==="X"&&spaces[7].symbol==="X"){
+    $("#winHeader").append("Player 1 wins");
+  }
+  else if (spaces[1].symbol==="O"&&spaces[4].symbol==="O"&&spaces[7].symbol==="O"){
+    $("#winHeader").append("Player 2 wins");
+  }
+  else if (spaces[2].symbol==="X"&&spaces[5].symbol==="X"&&spaces[8].symbol==="X"){
+    $("#winHeader").append("Player 1 wins");
+  }
+  else if (spaces[2].symbol==="O"&&spaces[5].symbol==="O"&&spaces[8].symbol==="O"){
+    $("#winHeader").append("Player 2 wins");
+  }
+  else if (spaces[0].symbol==="X"&&spaces[4].symbol==="X"&&spaces[8].symbol==="X"){
+    $("#winHeader").append("Player 1 wins");
+  }
+  else if (spaces[0].symbol==="O"&&spaces[4].symbol==="O"&&spaces[8].symbol==="O"){
+    $("#winHeader").append("Player 2 wins");
+  }
+  else if (spaces[6].symbol==="X"&&spaces[4].symbol==="X"&&spaces[2].symbol==="X"){
+    $("#winHeader").append("Player 1 wins");
+  }
+  else if (spaces[6].symbol==="O"&&spaces[4].symbol==="O"&&spaces[2].symbol==="O"){
+    $("#winHeader").append("Player 2 wins");
+  }
 }
-
 
 $(document).ready(function() {
   setSpaces();
