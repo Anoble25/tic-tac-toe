@@ -1,0 +1,22 @@
+.main-container {
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.board {
+    height: 420px;
+    width: 420px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 140px;
+    height: 140px;
+    border: 2px solid black;
+    cursor:pointer;
+    float:left;
+    line-height: 140px;
+    text-align: center;
+    font-size: 70px;
+}
